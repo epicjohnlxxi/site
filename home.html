@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EpicJohn's Website</title>
+    <link rel="stylesheet" href="data/index.css" />
+    <link rel="icon" type="image/x-icon" href="data/favicon.ico">
+</head>
+<body background="data/bgstar.gif">
+
+    <center>
+        <h1>Welcome to the official website of</h1>
+        <img src="data/ejtext.gif" />
+    </center>
+    <br />
+    <center>
+        <a href="home.html">[ Home ]</a>
+        <a href="about.html">[ About Me ]</a>
+        <a href="source.html">[ Source Mods ]</a>
+        <a href="games.html">[ Games ]</a>
+        <a href="socials.html">[ Social Media and Contact ]</a>
+    </center>
+    <hr />
+    <br />
+    <br />
+    <center>
+        <h1 style="font-size: 48px;">Welcome to my website</h1>
+        <h3>Welcome to my official website. Here you can find different information about me and the stuff I do, which includes links to info of my games, source game mods, and social medias/contact methods. This website was developed by me purely in HTML, CSS, and JavaScript, designed to look like an old website from the late 90s-early 2000s. I hope you enjoy my website and enjoy looking around it!</h3>
+    </center>
+    <hr />
+    <center>
+        <p>Website Update No. I</p>
+        <p>Last Update: xx/xx/xxxx</p>
+        <p id="dateTxt">Current Date Here</p>
+        <br />
+        <p>&copy; Copyright John Fiore, MMXXIII</p>
+    </center>
+
+    <script>
+        const date = new Date();
+
+        let month = date.getMonth() + 1;
+        let day = date.getDate();
+        let year = date.getFullYear();
+
+        console.log(month + "/" + day + "/" + year);
+        document.getElementById("dateTxt").innerHTML = "Current Date: " + month + "/" + day + "/" + year;
+    </script>
+
+</body>
+</html>
